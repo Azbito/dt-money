@@ -22,7 +22,7 @@ export function Summary() {
       acc.deposits += Number(transaction.amount);
       acc.total += Number(transaction.amount);
     } else {
-      acc.withdraws += transaction.amount;
+      acc.withdraws += Number(transaction.amount);
       acc.total -= transaction.amount;
     }
 
